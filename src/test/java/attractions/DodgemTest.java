@@ -49,4 +49,10 @@ public class DodgemTest {
     public void getOverElevenPrice() {
         assertEquals(4.50, dodgems.priceFor(overEleven), 0.01);
     }
+
+    @Test
+    public void canIncrementVisitCount() {
+        dodgems.incrementVisitCount();
+        assertEquals(1, dodgems.getVisitCount());
+    }
 }
